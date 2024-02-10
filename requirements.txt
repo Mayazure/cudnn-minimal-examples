@@ -1,0 +1,12 @@
+# ---------------------------------
+#  System           platform value
+# ---------------------------------
+#  Linux            "linux"
+#  Windows          "win32"
+# ---------------------------------
+
+python_version >= "3.10"
+
+numpy == 1.24.4
+torch @ https://download.pytorch.org/whl/cu117/torch-2.0.1%2Bcu117-cp310-cp310-win_amd64.whl; sys_platform == 'win32'
+torch @ https://download.pytorch.org/whl/cu117/torch-2.0.1%2Bcu117-cp310-cp310-linux_x86_64.whl; sys_platform == 'linux'
